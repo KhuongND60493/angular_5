@@ -1,0 +1,17 @@
+.ul-list{
+    list-style: none;
+    border: 1px solid blue;
+    padding: 0px;
+    border-radius: 5px
+}
+.ul-list li{
+    background-color: yellowgreen;
+    margin: 5px;
+    padding: 10px;
+    color: white;
+    border-radius: 5px
+}
+.chooseMovie{
+    background-color: blue !important;
+
+}

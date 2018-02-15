@@ -1,0 +1,18 @@
+<div>
+  <div style="text-align: center">
+    <b>Danh sách phim</b>
+  </div>
+  <div style="text-align: right;margin-bottom: 5px;margin-right: 5px">
+    <button class="btn btn-default" routerLink='/movies-detail/0'>
+      New
+    </button>
+  </div>
+  <div *ngIf='list'>
+    <ul class="ul-list">
+      <li *ngFor='let m of list' [class.chooseMovie]='selectedMovie===m'>
+        <a routerLink='/movies-detail/{{m.id}}'> {{m.id}}.{{m.nameMovie}}
+           ({{m.realeaseMovie}})</a>
+      </li>
+    </ul>
+  </div>
+</div>
